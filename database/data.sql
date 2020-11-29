@@ -1,0 +1,11 @@
+CREATE DATABASE data;
+use data;
+
+CREATE TABLE personas(
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  nombres VARCHAR(255) NOT NULL,
+  texto TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE personas;
